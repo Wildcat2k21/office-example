@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Войти в профиль</title>
+        <link rel="favicon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/src/styles/modal-window.css">
+        <link rel="stylesheet" href="/src/styles/header.css">
+        <link rel="stylesheet" href="/src/styles/footer.css">
+        <link rel="stylesheet" href="/src/styles/main.css">
+        <link rel="stylesheet" href="/src/styles/index.css">
+        <link rel="stylesheet" href="/src/styles/pages/login.css">
+        <script src="/src/scripts/storage.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <div class="main-nav nav">
+                    <a class="about-tab" href="/">О компании</a>
+                    <a class="report-tab" href="/pages/reports.html?_page=1&_limit=5">Отчеты компании</a>
+                    <a class="employees-tab" href="/pages/employees.html">Сотрудникам</a>
+                </div>
+                <!-- Отображение опции авторизации / выхода обрабатывается в index.js -->
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <form class="login-form" action="/api/login" method="POST">
+                    <h2>Вход в личный кабенет</h2>
+                    <input id="login" name="login" type="text" placeholder="Логин">
+                    <input id="password" name="password" type="password" placeholder="Пароль"/>
+                    <input id="submit-btn" disabled="" class="btn disabled-btn" type="submit" value="Войти">
+                    <a class="form-info-link" href="/pages/newprofile.html">Создать аккаунт</a>
+                </form>
+            </div>
+        </main>
+        <footer>
+           <div class="footer-container">
+            <span class="info">Наш головной офис находится в Санкт-Петербурге, на проспекте Пушкина, здание №1.</span>
+            <span class="info">Номер для связи с нами: +7 (812) 123-45-67. Или писать на электронную почту Office@example.com</span>
+            <div class="logo">
+                <img alt="логотип фирмы" src="/src/img/favicon.png" alt="">
+                <span>ООО "ОФИС"</span>
+            </div>
+           </div>
+        </footer>
+        <script src="/src/scripts/modal_window/index.js"></script>
+        <script src="/src/scripts/topnav.js"></script>
+        <script src="/src/scripts/index.js"></script>
+        <script src="/src/scripts/login/index.js"></script>
+        <script src="/src/scripts/login/handleInputs.js"></script>
+    </body>
+</html>

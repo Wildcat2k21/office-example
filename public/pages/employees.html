@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>сотрудникам фирмы "ОФИС"</title>
+        <link rel="favicon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/src/styles/modal-window.css">
+        <link rel="stylesheet" href="/src/styles/header.css">
+        <link rel="stylesheet" href="/src/styles/footer.css">
+        <link rel="stylesheet" href="/src/styles/main.css">
+        <link rel="stylesheet" href="/src/styles/index.css">
+        <script src="/src/scripts/storage.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <div class="main-nav nav">
+                    <a class="about-tab" href="/">О компании</a>
+                    <a class="report-tab" href="/pages/reports.html?_page=1&_limit=5">Отчеты компании</a>
+                    <a class="employees-tab active-tab">Сотрудникам</a>
+                </div>
+                <!-- Отображение опции авторизации / выхода обрабатывается в index.js -->
+            </div>
+            <div class="firm-image"></div>
+        </header>
+        <main>
+            <div class="content">
+                <h1>Памятка для сотрудника</h1>
+                <p>Начало рабочего дня: 9:00<br>Окончание рабочего дня: 18:00<br>Обеденный перерыв: 13:00 - 14:00</p>
+                <h2>Правила поведения</h2>
+                <p>Соблюдать внутренний распорядок компании.<br>Своевременно выполнять порученные задания.<br>Уважительно относиться к коллегам и клиентам.</p>
+                <h2>Безопасность</h2>
+                <p>Соблюдайте технику безопасности на рабочем месте, не передавайте пароли третьим лицам, используйте антивирусное ПО.</p>
+                <img class='wallpaper' src="/src/img/office5.webp"></img>
+                <h2>Связь и контакты</h2>
+                <p>В случае возникновения вопросов обращайтесь в отдел кадров или к непосредственному руководителю.</p>
+                <p><strong>Спасибо за вашу работу!</strong></p>
+            </div>
+        </main>
+        <footer>
+           <div class="footer-container">
+            <span class="info">Наш головной офис находится в Санкт-Петербурге, на проспекте Пушкина, здание №1.</span>
+            <span class="info">Номер для связи с нами: +7 (812) 123-45-67. Или писать на электронную почту Office@example.com</span>
+            <div class="logo">
+                <img class='wallpaper' alt="логотип фирмы" src="/src/img/favicon.png" alt="">
+                <span>ООО "ОФИС"</span>
+            </div>
+           </div>
+        </footer>
+        <script src="/src/scripts/modal_window/index.js"></script>
+        <script src="/src/scripts/topnav.js"></script>
+        <script src="/src/scripts/index.js"></script>
+    </body>
+</html>
