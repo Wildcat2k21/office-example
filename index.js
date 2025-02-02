@@ -60,7 +60,7 @@ const upload = multer({
 }); 
 
 //подключаем статические файлы
-app.use(express.static('public'));
+// app.use(express.static('public'));
 apiRouter.use('/profile_icons', express.static('profile_icons'));
 apiRouter.use('/docs', express.static('pdf_docs'));
 
